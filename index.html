@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health Support</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Mental Health Support</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="#quiz">Self-Check Quiz</a></li>
+                <li><a href="#quotes">Motivation</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><button id="theme-toggle">Toggle Dark Mode</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Welcome</h2>
+        <p>We provide support, guidance, and resources to improve mental health and wellbeing. Remember, you are not alone.</p>
+    </section>
+
+    <section id="resources">
+        <h2>Resources</h2>
+        <ul>
+            <li><a href="https://www.mentalhealth.gov" target="_blank">MentalHealth.gov</a></li>
+            <li><a href="https://www.nimh.nih.gov" target="_blank">National Institute of Mental Health (NIMH)</a></li>
+            <li><a href="https://www.samaritans.org" target="_blank">Samaritans</a></li>
+        </ul>
+    </section>
+
+    <section id="quiz">
+        <h2>Mental Health Self-Check Quiz</h2>
+        <form id="quizForm">
+            <p>1. Have you felt down or hopeless recently?</p>
+            <label><input type="radio" name="q1" value="yes" required> Yes</label>
+            <label><input type="radio" name="q1" value="no"> No</label>
+
+            <p>2. Have you lost interest in activities you usually enjoy?</p>
+            <label><input type="radio" name="q2" value="yes" required> Yes</label>
+            <label><input type="radio" name="q2" value="no"> No</label>
+
+            <p>3. Have you experienced trouble sleeping or excessive sleeping?</p>
+            <label><input type="radio" name="q3" value="yes" required> Yes</label>
+            <label><input type="radio" name="q3" value="no"> No</label>
+
+            <button type="submit">Submit</button>
+        </form>
+        <p id="quizResult"></p>
+    </section>
+
+    <section id="quotes">
+        <h2>Motivational Quotes</h2>
+        <div id="quoteDisplay"></div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" rows="5" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+        <p id="formResponse"></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Mental Health Support. All Rights Reserved to Abhinav Sajeev.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

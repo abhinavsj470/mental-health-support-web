@@ -1,0 +1,136 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body and Header */
+body {
+    line-height: 1.6;
+    background-color: #f5f5f5;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+header nav ul li a, header nav ul li button {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+section {
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+section h2 {
+    margin-bottom: 20px;
+    color: #4CAF50;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+body.dark-mode header {
+    background-color: #1f1f1f;
+}
+
+body.dark-mode section h2 {
+    color: #76c7c0;
+}
+
+body.dark-mode form input, 
+body.dark-mode form textarea {
+    background-color: #333;
+    color: #e0e0e0;
+    border: 1px solid #555;
+}
+
+/* Quiz and Quotes Styling */
+#quizForm label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#quizResult {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+#quoteDisplay {
+    background-color: #21e72b;
+    padding: 20px;
+    text-align: center;
+    font-style: italic;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+body.dark-mode #quoteDisplay {
+    background-color: #222;
+    color: #24bace;
+}
